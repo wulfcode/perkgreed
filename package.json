@@ -1,0 +1,8 @@
+{
+  "name": "perkgreed",
+  "version": "0.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:wulfcode/perkgreed.git",
+  "author": "Sean Prasertsit <sean@wulfcode.com>",
+  "license": "ISC"
+}
