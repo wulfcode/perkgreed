@@ -33,8 +33,18 @@ module.exports = {
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
         use: [
-          'file-loader',
-          'image-webpack-loader?bypassOnDebug&optimizationLevel=7&interlaced=false'
+          { loader: 'file-loader' },
+          {
+            loader: 'image-webpack-loader?bypassOnDebug&optimizationLevel=7&interlaced=false',
+            query: {
+              gifsicle: {
+                interlaced: false,
+              },
+              optipng: {
+                optimizationLevel: 7,
+              },
+            }
+          }
         ]
       }
     ]

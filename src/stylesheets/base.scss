@@ -1,3 +1,27 @@
+@import 'colors';
+
+@import '../components/Navigation/Navigation.scss';
+
+// Typography
+html {
+  font-size: 16px;
+}
+body, p {
+  font-family: 'Lato', sans-serif;
+  color: $secondary-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Alfa Slab One', cursive;
+  color: $primary-color;
+}
+
+// Layout
+html {
+  height: 100%;
+}
 body {
-  background-image: url('../images/background.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('../images/background.jpg');
+  background-size: cover;
+  min-height: 100%;
 }
