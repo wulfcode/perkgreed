@@ -1,6 +1,8 @@
 @import 'colors';
 
 @import '../components/Navigation/Navigation.scss';
+@import '../components/Box/Box.scss';
+@import '../components/WeaponRow/WeaponRow.scss';
 
 // Typography
 html {
@@ -11,9 +13,20 @@ body, p {
   color: $secondary-color;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
   font-family: 'Alfa Slab One', cursive;
   color: $primary-color;
+}
+
+h2 {
+  font-size: 1.3rem;
+  font-weight: lighter;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: 'Lato', sans-serif;
+  color: $header-color;
+  text-transform: uppercase;
 }
 
 // Layout
