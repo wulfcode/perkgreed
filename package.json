@@ -1,4 +1,10 @@
 {
+	"name": "perkgreed",
+	"private": true,
+	"license": "MIT",
+  "version": "0.0.0",
+  "repository": "git@github.com:wulfcode/perkgreed.git",
+  "author": "Sean Prasertsit <sean@wulfcode.com>",
 	"devDependencies": {
 		"lerna": "^2.0.0"
 	}
