@@ -1,0 +1,11 @@
+{
+  "name": "perkgreed-mason",
+  "version": "0.0.0",
+  "description": "PerkGreed weapon stats API.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sean Prasertsit <sean@wulfcode.com>",
+  "license": "MIT"
+}
