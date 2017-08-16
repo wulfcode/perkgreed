@@ -1,2 +1,2 @@
 # perkgreed
-COD class creator
+Services for the PerkGreed app.
