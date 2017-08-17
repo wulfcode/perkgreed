@@ -9,7 +9,7 @@
   "author": "Sean Prasertsit <sean@wulfcode.com>",
   "license": "MIT",
   "dependencies": {
-    "babel-register": "^6.26.0",
-    "koa": "^2.3.0"
+    "body-parser": "^1.17.2",
+    "express": "^5.0.0-alpha.5"
   }
 }
