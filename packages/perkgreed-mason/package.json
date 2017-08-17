@@ -9,6 +9,6 @@
   "author": "Sean Prasertsit <sean@wulfcode.com>",
   "license": "MIT",
   "dependencies": {
-    "express": "^5.0.0-alpha.5"
+    "koa": "^2.3.0"
   }
 }
