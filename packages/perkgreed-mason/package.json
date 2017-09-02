@@ -4,6 +4,7 @@
   "description": "PerkGreed weapon stats API.",
   "main": "app.js",
   "scripts": {
+    "lint": "eslint ./",
     "test": "mocha",
     "start": "node app.js"
   },

@@ -6,7 +6,7 @@ const app = express();
 app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
-  res.json({ info: 'Hello, soldier. Did you forget to append path "/v1"?'} );
+  res.json({ info: 'Hello, soldier. Did you forget to append path "/v1"?' });
 });
 
 app.use('/v1', require('./routes/index'));
