@@ -7,5 +7,12 @@
   "author": "Sean Prasertsit <sean@wulfcode.com>",
 	"devDependencies": {
 		"lerna": "^2.0.0"
-	}
+  },
+  "eslintConfig": {
+    "extends": "airbnb-base",
+    "env": {
+      "node": true,
+      "commonjs": true
+    }
+  }
 }

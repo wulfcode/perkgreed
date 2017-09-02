@@ -1,4 +1,4 @@
-const expect = require('chai').expect;
+const { expect } = require('chai');
 const supertest = require('supertest');
 const api = supertest('http://mason.localhost:3101');
 
