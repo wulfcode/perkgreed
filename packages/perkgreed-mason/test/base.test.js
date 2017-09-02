@@ -3,7 +3,7 @@ const supertest = require('supertest');
 const api = supertest('http://mason.localhost:3101');
 
 describe('Mason', function() {
-  it('should respond with a friendly help greeting at the base url.', function(done) {
+  it('should respond with a friendly help greeting at the base url', function(done) {
     api.get('/')
     .set('Accept', 'application/json')
     .expect(200)
@@ -13,7 +13,7 @@ describe('Mason', function() {
       done();
     });
   });
-  it('should respond with the version at the version url.', function(done) {
+  it('should respond with the version at the version url', function(done) {
     api.get('/v1')
     .set('Accept', 'application/json')
     .expect(200)
