@@ -8,7 +8,8 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "test": "lerna run test",
-    "cover": "lerna run cover"
+    "cover": "lerna run cover",
+    "start": "cd ./packages/perkgreed-mason && node app.js &"
   },
 	"devDependencies": {
 		"lerna": "^2.0.0"
