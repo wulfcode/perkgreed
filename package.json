@@ -7,7 +7,8 @@
   "author": "Sean Prasertsit <sean@wulfcode.com>",
   "scripts": {
     "bootstrap": "lerna bootstrap",
-    "test": "lerna run test"
+    "test": "lerna run test",
+    "cover": "lerna run cover"
   },
 	"devDependencies": {
 		"lerna": "^2.0.0"
