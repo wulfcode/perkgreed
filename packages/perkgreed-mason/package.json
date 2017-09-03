@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "lint": "eslint ./",
-    "test": "mocha",
+    "test": "npm run lint",
+    "mocha": "mocha ./test",
     "start": "node app.js"
   },
   "author": "Sean Prasertsit <sean@wulfcode.com>",

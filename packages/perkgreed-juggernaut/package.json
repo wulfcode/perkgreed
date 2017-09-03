@@ -4,7 +4,7 @@
   "description": "PerkGreed weapon stats ingester.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"No tets\" && exit 0"
+    "test": "echo \"No tests\""
   },
   "author": "Sean Prasertsit <sean@wulfcode.com>",
   "license": "MIT"

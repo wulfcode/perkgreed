@@ -5,6 +5,10 @@
   "version": "0.0.0",
   "repository": "git@github.com:wulfcode/perkgreed.git",
   "author": "Sean Prasertsit <sean@wulfcode.com>",
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "test": "lerna run test"
+  },
 	"devDependencies": {
 		"lerna": "^2.0.0"
   },
