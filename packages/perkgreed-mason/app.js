@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const messages = require('../perkgreed-messages');
 
 const app = express();
 
@@ -12,7 +13,7 @@ app.get('/', (req, res) => {
 app.use('/v1', require('./routes/index'));
 
 app.get('*', (req, res) => {
-  res.status(404).json({ res: 'Not found' });
+  res.status(404).json({ res: messages.get('notFound') });
 });
 
 app.listen(3101);

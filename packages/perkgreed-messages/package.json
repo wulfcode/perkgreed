@@ -1,0 +1,15 @@
+{
+  "name": "perkgreed-messages",
+  "version": "0.0.0",
+  "description": "PerkGreed string literals",
+  "main": "index.js",
+  "author": "Sean Prasertsit <sean@wulfcode.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "mocha ./"
+  },
+  "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^3.5.0"
+  }
+}
