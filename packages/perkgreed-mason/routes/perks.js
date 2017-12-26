@@ -1,9 +1,11 @@
-const express = require('express');
+const Router = require('koa-router');
 
-const router = express.Router();
+const router = new Router();
 
-router.get('/', (req, res) => {
-  res.json({ perks: [] });
+router.get('/', async ctx => {
+  ctx.body = {
+    perks: [],
+  };
 });
 
 module.exports = router;

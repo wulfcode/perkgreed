@@ -1,14 +1,17 @@
-const express = require('express');
+const Router = require('koa-router');
 
-const router = express.Router();
+const weaponsRoutes = require('./weapons');
+const perksRoutes = require('./perks');
 
-router.get('/', (req, res) => {
-  res.json({
-    current_version: process.env.npm_package_version,
-  });
+const router = new Router();
+
+router.get('/', async ctx => {
+  ctx.body = {
+    api_version: process.env.npm_package_version,
+  };
 });
 
-router.use('/weapons', require('./weapons'));
-router.use('/perks', require('./perks'));
+router.use('/weapons', weaponsRoutes.routes());
+router.use('/perks', perksRoutes.routes());
 
 module.exports = router;

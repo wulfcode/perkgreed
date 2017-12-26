@@ -1,19 +1,17 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const messages = require('../perkgreed-messages');
+const koa = require('koa');
+const Router = require('koa-router');
+const routes = require('./routes');
 
-const app = express();
+const app = new koa();
+const router = new Router();
+const PORT = 4001;
+const API_VERSION = 'v1';
 
-app.use(bodyParser.json());
+router.use(`/${API_VERSION}`, routes.routes());
+app.use(router.routes());
 
-app.get('/', (req, res) => {
-  res.json({ info: 'Hello, soldier. Did you forget to append path "/v1"?' });
+const server = app.listen(PORT, () => {
+  console.log(`Server listening on port ${PORT}.`);
 });
 
-app.use('/v1', require('./routes/index'));
-
-app.get('*', (req, res) => {
-  res.status(404).json({ res: messages.get('notFound') });
-});
-
-app.listen(3101);
+module.exports = server;
