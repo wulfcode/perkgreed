@@ -6,6 +6,7 @@
   "scripts": {
     "lint": "eslint ./",
     "test": "npm run lint",
+    "knex": "knex",
     "start": "node app.js"
   },
   "author": "Sean Prasertsit <sean@wulfcode.com>",
@@ -16,6 +17,7 @@
     "eslint-plugin-import": "^2.8.0",
     "knex": "^0.14.2",
     "koa": "^2.4.1",
+    "koa-json": "^2.0.2",
     "koa-router": "^7.3.0",
     "mysql2": "^1.5.1"
   }
