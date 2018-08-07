@@ -1,7 +1,7 @@
 {
-	"name": "perkgreed",
-	"private": true,
-	"license": "MIT",
+  "name": "perkgreed",
+  "private": true,
+  "license": "MIT",
   "version": "0.0.0",
   "repository": "git@github.com:wulfcode/perkgreed.git",
   "author": "Sean Prasertsit <sean@wulfcode.com>",
@@ -10,8 +10,8 @@
     "test": "lerna run test",
     "cover": "lerna run cover"
   },
-	"devDependencies": {
-		"lerna": "^2.0.0"
+  "devDependencies": {
+    "lerna": "^3.0.0-rc.0"
   },
   "eslintConfig": {
     "extends": "airbnb-base",
